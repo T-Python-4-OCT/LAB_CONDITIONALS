@@ -8,9 +8,14 @@ elif age <= 59: price = 10
 else: price = 7
 if day not in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]: 
     print("Invalid day")
-elif stu not in ["yes", "no"]: print("Invalid student")
+elif stu not in ["yes", "no"]:
+ print("Invalid student")
 else: 
     if day == "Friday": price = price + 2 
     if stu == "yes" and price != 0:
      price = price * 0.8 
+    
+if price == 0:
+    print ("Ticket: Free")
+else:
     print("Ticket:", price)
